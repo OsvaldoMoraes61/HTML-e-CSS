@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        /* oculta o parágrafo dentro de Div */
+        div > p {
+            display: none;
+        }
+
+        /* exibe o texto oculto no par dentro da Div */
+        div:hover > p{
+            display: block;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* muda a cor quando passar o mouse */
+        div:hover {
+            color: #03034e;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>passe o mouse no texto abaixo</p>
+    <p>
+        <div>
+            passe o mouse aqui
+            <p>Texto escondido</p>
+
+        </div>
+    </p>
+    <p>fim do exemplo</p>
+    
+</body>
+</html>

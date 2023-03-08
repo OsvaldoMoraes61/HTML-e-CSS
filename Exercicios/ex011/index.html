@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem Dinâmica</H1>
+    <p>Tente abrir o site em vários dispositivos ou simplesmente aumente ou diminua a tela de se navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto de Tamanho grande - flexivel">
+    </picture>
+    
+    <h2>Reproduzindo audios<h2>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    
+    <audio src="midias/Pray - Anno Domini Beats.mp3" controls autoplay> </audio>
+    <p>ou vc pode carregar de outra forma, onde ele procura de cima para baixo um arquivo para tocar</p>
+
+    <audio preload="metadata" controls loop>
+        <source src="midias/Night Run Away - An Jone.ogg" type="audio/ogg">
+        <source src="midias/Night Run Away - An Jone.mp3" type="audio/mpeg">
+        <source src="midias/Night Run Away - An Jone.wav" type="audio/wave">
+        <p>Infelizmente seu navegador não consegue reproduzir audio
+            <a href="midias/Pray - Anno Domini Beats.mp3">Clique aqui para baixar outro audio</a>
+        </p>
+
+
+    </audio>
+    
+</body>
+</html>
