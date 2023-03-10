@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(99, 57, 138);
+            border: 1px dashed black;
+        }
+
+        table {
+            width: 500px;
+            border: 1px solid black;
+            padding: 10px;
+            border-collapse: collapse;
+            box-shadow: 3px 3px 3px black;
+
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 7px;
+        }
+        th {
+            background-color: rgb(85, 135, 245);
+        }
+
+        .branco {
+            background-color: rgb(85, 135, 245);
+        }
+
+        .preto {
+            background-color: rgb(113, 230, 204);
+        }
+    </style>    
+</head>
+<body>
+    <h1>Colorir colunas de dados</h1>
+    <table>
+
+        <colgroup>
+            <!-- Nomeando as colunas
+            <col class="_Nome">
+            <col class="_Sexo">
+            <col class="_Idade">
+            <col class="_Profissao">
+            -->
+            <!--    ou  -->    
+            <col class="branco">
+            <col class="preto">
+            <col class="branco" span="2">
+            
+           <!--
+           <col class="preto">
+           <col class="branco">
+           --> 
+
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nomes</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            <th scope="col">Coluna Extra</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Extra</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Extra</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Extra</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Extra</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Extra</td>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+            <td>Extra</td>
+        </tr>
+        <tr>
+            <td>Linha extra</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Extra</td>
+            <td>Extra-Extra</td>
+        </tr>
+    </table>
+</body>
+</html>
