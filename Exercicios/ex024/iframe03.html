@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 300;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Abrindo páginas locais através de menu</h1>
+    <h2>Faça uma escolha no menu</h2>
+    <ul>
+        <!-- target="frame" se refere a proprriedade "name" do iframe-->
+        <li><a href="../ex023/Tabelas001.html" target="frame">
+            Tabela - 01</a></li>
+        <li><a href="../ex023/Tabelas002.html" target="frame">
+            Tabela - 02</a></li>
+        <li><a href="../ex023/Tabelas003.html" target="frame">
+            Tabela - 03</a></li>
+        <li><a href="../ex023/Tabelas004.html" target="frame">
+            Tabela - 04</a></li>
+        <li><a href="../ex023/Tabelas005.html" target="frame">
+            Tabela - 05</a></li>
+        <li><a href="../ex023/Tabelas006.html" target="frame">
+            Tabela - 06</a></li>        
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut impedit mollitia voluptas minima, perferendis suscipit expedita. Vitae ex enim non veniam hic, doloribus voluptates doloremque minima, ipsa, quas unde qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis repellat, aliquid labore maxime exercitationem natus hic corrupti ad sequi sint rerum consequatur quo optio iusto modi a quam blanditiis molestias?</p>
+
+    <iframe id="tela" name="frame" src="https://gustavoguanabara.github.io" frameborder="0" height="500" width="500"></iframe>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptas facilis eius commodi! Ab, dicta reiciendis, molestias aliquam enim repudiandae dolorem animi ad optio quo perspiciatis minus consequuntur consectetur quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis nisi ut dicta repellat eaque perspiciatis tempore, eveniet iste atque quasi vitae ad asperiores praesentium recusandae inventore reprehenderit dolores libero.</p>
+</body>
+</html>
