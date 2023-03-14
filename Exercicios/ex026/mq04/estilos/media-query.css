@@ -1,2 +1,82 @@
 @charset "UTF-8";
 
+/* Todas as demais midias 
+
+Typical Device Breakpoints
+--------------------------
+- Pequenas telas:   até 600px
+- Celular:  de 600px até 768px
+- Tablet:   de 768px até 992px
+- Desktop:  de 992px até 1200px
+- Grandes Telas: acima de 1200px
+*/
+
+
+@media print { /* IMPRESSÃO */
+    * { 
+        font-family: monospace; 
+    }
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    }
+    main {
+        border: 2px solid black;
+    }
+
+    main::after {
+        content: 'Imprressão através do Curso em Vídeo';
+        text-decoration: overline;
+    }
+ 
+    main h1, h2 {
+        text-shadow: none;
+        color: black;
+    }
+
+    img#tablet {display: none;} 
+    img#phone { display: none;}
+    img#print {display: block;}
+    img#pc {display: none;}
+    img#tv {display: none;}  
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* Tablet */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tablet {display: block;} 
+    img#phone { display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}  
+}
+
+@media screen and (min-width: 992px) and (max-width:1200px) { /* Desktop */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        width: 500px;
+    }
+
+    img#pc { display: block };        
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#tv {display: none;}    
+    img#phone { display: none;}
+}
+
+@media screen and (min-width: 1200px) { /* Grandes telas */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    main {
+        width: 800px;
+    }
+    img#tv {display: block;}
+    img#phone { display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}    
+}
