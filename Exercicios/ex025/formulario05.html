@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form com checkbox</title>
+</head>
+<body>
+    <form action="Cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--Ambos os "name" tem que ser o mesmo para o radio funcionar
+            Checked já fica marcado
+            -->
+            <input type="radio" name="sexo" id="isxmasc" checked value="M"><label for="isxmasc" >Masculino</label>
+
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Grupo de checkbox</legend>
+            <input type="checkbox" name="esfut" id="iespfut"><label for="iespfut">Futebol</label><br>
+            <input type="checkbox" name="esbasq" id="iespbasq"><label for="iespbasq">Basquete</label><br>
+            <input type="checkbox" name="esvolei" id="iespvolei"><label for="iespvolei">Volei</label><br>
+            <input type="checkbox" name="estenis" id="iesptenis"><label for="iesptenis">Tênis</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </p>
+        
+        
+    </form>
+    
+</body>
+</html>

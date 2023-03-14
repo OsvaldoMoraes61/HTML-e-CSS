@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form com checkbox</title>
+</head>
+<body>
+    <form action="Cadastro.php" method="post" autocomplete="on">
+
+        <label for="iest">Estado: </label>
+        <select name="estado" id="iest">????????
+
+            <option value="" selected>---(Selecione sua opção)---</option>
+            
+            <optgroup label="Região Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernambuco</option>
+                <option value="RN">Rio Grande do Norte</option>
+            </optgroup>
+            
+        </select>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Desenvolvedor</option>
+                <option>Contabilista</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Digite sua Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite..."></textarea>
+        </p>
+
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <!--Ambos os "name" tem que ser o mesmo para o radio funcionar
+            Checked já fica marcado
+            -->
+            <input type="radio" name="sexo" id="isxmasc" checked value="M"><label for="isxmasc" >Masculino</label>
+
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Grupo de checkbox</legend>
+            <input type="checkbox" name="esfut" id="iespfut"><label for="iespfut">Futebol</label><br>
+            <input type="checkbox" name="esbasq" id="iespbasq"><label for="iespbasq">Basquete</label><br>
+            <input type="checkbox" name="esvolei" id="iespvolei"><label for="iespvolei">Volei</label><br>
+            <input type="checkbox" name="estenis" id="iesptenis"><label for="iesptenis">Tênis</label><br>
+        </fieldset>
+
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de (0a100) </label>
+            <input type="range" name="nivel" id="inivel">
+        </p>
+
+        <p>
+            <label for="inivel1">Nivel pre-definido (1a5):</label>
+            <input type="range" name="nivel1" id="inivel1" min="1" max="5" value="2">
+        </p>
+
+        <p>
+            <!-- Para o arquivo ser enviado não pode usar o metodo GET
+            usar o POST (+3000b)-->
+            <label for="ifoto">Foto do perfil: </label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+        </p>
+        
+        
+    </form>
+    
+</body>
+</html>
