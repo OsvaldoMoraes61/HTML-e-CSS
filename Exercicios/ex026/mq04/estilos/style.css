@@ -1,48 +1,47 @@
 @charset "UTF-8";
 
-/* OU TODOS REUNIDOS EM UM SÓ CSS */
-        /* Declarações Gerais 
-        ---------------------- */
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+/* VERSÃO MOBILE FIRST */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
 
-        html, body {
-            width: 100vw;
-            height: 100vh;
-            background-color: #233eff;
-            padding: 10px;
-            background-repeat: no-repeat;
-            background-size: contain;
-        }
+html {
+    height: 100vh;
+}
 
-        h1, h2  {
-            color: white;
-            text-shadow: 3px 3px 5px darkblue;
-            font-size: 4em;
-            text-align: center;
-        }        
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
-        /* Declarações Portrait 
-        ---------------------- */
-        @media screen and (orientation: portrait) {
+main {
+    background-color: rgba(255, 255, 255, 0.712);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
 
-        body {
-        background-image: url(../imagens/cev-portrait.jpg);
-        background-position: center bottom;
-        }
-        }
+h1, h2  {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.685);
+}
 
-        /* Declarações Landscape 
-        ---------------------- */
-        @media screen and (orientation: landscape) {
+img {
+    display: block;
+    margin: auto;
+}
 
-        body {
-        background-image: url(../imagens/cev-landscape.jpg);
-        background-position: left bottom;
-        } 
-        }
-
-        }
+img#phone { display: block;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#pc {display: none;}
+img#tv {display: none;}
